@@ -6,12 +6,14 @@
 
 Lot 6 validé par l'utilisateur (2026-09-01). Lot 7 (GitHub Actions et déploiement GitHub Pages) proposé mais explicitement non démarré à la demande de l'utilisateur ("ne fait pas le lot suivant tout de suite").
 
+Nouveau lot demandé explicitement par l'utilisateur (2026-09-01) : nouvelle direction visuelle inspirée de https://www.hellokuya.co/ (typographie XL, séparateurs fins, boutons pilule, cartes « étude de cas »), adaptée en version sobre et avec une palette chaude/familiale (terracotta/ambre). Plan détaillé validé via le mode plan puis implémenté. Aucun changement de contenu, de route ou de comportement fonctionnel — uniquement l'habillage visuel de l'ensemble du site (thème, navigation, accueil, page Famille, pages en construction, 404). En attente de validation finale de l'utilisateur sur le rendu.
+
 ## État global
 
-- Statut : lots 0 à 6 terminés, committés localement et validés. Lot 7 non démarré.
-- Lot courant : aucun — en attente d'instruction pour démarrer le lot 7
-- Dernière étape achevée : validation utilisateur du lot 6
-- Build : dernier `npm run build` réussi. Avertissement non bloquant : chunk JS/CSS principal > 500 kB après minification, car tous les composants et directives Vuetify sont enregistrés globalement (nécessaire car le point d'entrée `vuetify` de la version 4 n'inclut plus les composants par défaut). Optimisable plus tard par imports ciblés si besoin, non traité pour l'instant.
+- Statut : lots 0 à 6 terminés, committés localement et validés. Lot 7 non démarré. Le lot de restylage visuel complet (voir « Objectif actuel ») est implémenté et en attente de validation utilisateur avant commit.
+- Lot courant : restylage visuel complet inspiré de hellokuya.co — implémentation terminée, validation utilisateur en attente
+- Dernière étape achevée : implémentation du restylage (thème, navigation, accueil, page Famille, pages en construction, 404) et vérification `npm run build`
+- Build : dernier `npm run build` réussi (type-check + build). Avertissement non bloquant inchangé : chunk JS/CSS principal > 500 kB après minification, car tous les composants et directives Vuetify sont enregistrés globalement (nécessaire car le point d'entrée `vuetify` de la version 4 n'inclut plus les composants par défaut). Optimisable plus tard par imports ciblés si besoin, non traité pour l'instant.
 
 ## Tâches terminées
 
@@ -25,7 +27,19 @@ Lot 6 validé par l'utilisateur (2026-09-01). Lot 7 (GitHub Actions et déploiem
 
 ## Tâche en cours
 
-Aucune. En attente d'instruction explicite pour démarrer le lot 7.
+Restylage visuel implémenté (voir détail ci-dessous), en attente de validation utilisateur du rendu avant commit. Lot 7 toujours non démarré.
+
+## Détail de l'implémentation du restylage visuel (inspiré de hellokuya.co)
+
+- `src/main.ts` : nouvelle palette de thème Vuetify (`primary` `#C1552D`, `secondary` `#E3A857`, `background` `#FBF6F0`, texte fort `#2B2420`) ; `defaults` Vuetify pour arrondir `VBtn` en pilule par défaut. Aucune nouvelle dépendance, police système/Roboto inchangée.
+- `src/App.vue` : classes utilitaires globales `.section-kicker` (étiquette de section + séparateur fin) et `.display-title` / `.display-title--sm` (titres XL, graisse 900) réutilisées sur toutes les pages.
+- `src/components/AppNavBar.vue` : barre plate avec bordure basse discrète, lien de navigation actif souligné (au lieu d'un fond coloré plein), wordmark en gras.
+- `src/views/HomeView.vue` : hero avec titre XL ; section « Rubriques » restructurée en lignes pleine largeur (icône colorée + titre + courte description + bouton pilule « Découvrir ») séparées par des filets fins ; citations restylées en pull-quotes (fond ambré atténué, icône de guillemet).
+- `src/views/FamilleView.vue` : titre XL, séparateur en tête de page, avatars agrandis en couleur secondaire, nom en gras.
+- `src/components/UnderConstruction.vue` (impacte What Brandon Think, Arbre généalogique, Timeline) et `src/views/NotFoundView.vue` : titre XL, icône/« 404 » en couleur secondaire, bouton pilule « Retour à l'accueil ».
+- Aucun contenu, donnée, route ou comportement fonctionnel modifié — uniquement l'habillage visuel, conformément au plan validé explicitement par l'utilisateur (mode plan, 2026-09-01).
+- `nvm use stable && npm run build` réussi (type-check + build), avertissement de taille de bundle inchangé (déjà documenté).
+- Vérification manuelle dans Chrome (largeur desktop) : accueil, page Famille (grille + fiche détaillée), page en construction (Timeline), page 404, lien de navigation actif — tous conformes. Limitation déjà connue de cet environnement (voir lot 1) : le redimensionnement de fenêtre vers une largeur mobile n'a pas été pris en compte par l'outil de test ; le rendu mobile réel reste à confirmer par l'utilisateur.
 
 ## Détail de l'implémentation du lot 6
 

@@ -21,16 +21,17 @@ function openMember(member: FamilyMember) {
 
 <template>
   <v-container>
-    <h1 class="mb-6">La famille</h1>
+    <h1 class="display-title mb-8">La famille</h1>
+    <v-divider class="mb-8" />
 
     <v-row>
       <v-col v-for="member in familyMembers" :key="member.id" cols="6" sm="4" md="3">
         <v-card class="text-center pa-4 lift-on-hover" hover @click="openMember(member)">
-          <v-avatar size="80" color="grey-lighten-3" class="mb-2">
+          <v-avatar size="96" color="secondary" class="mb-2">
             <v-img v-if="member.image" :src="member.image" :alt="member.imageAlt" />
-            <v-icon v-else icon="mdi-account" size="40" color="grey-darken-1" />
+            <v-icon v-else icon="mdi-account" size="48" color="white" />
           </v-avatar>
-          <div>{{ member.displayName }}</div>
+          <div class="font-weight-bold">{{ member.displayName }}</div>
         </v-card>
       </v-col>
     </v-row>

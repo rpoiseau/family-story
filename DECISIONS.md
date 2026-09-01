@@ -58,6 +58,11 @@
 - Thème clair uniquement
 - Animations petites et discrètes
 - Deux dernières versions de Chrome, Edge, Firefox et Safari
+- Direction visuelle (2026-09-01), inspirée de https://www.hellokuya.co/ dans une version sobre validée explicitement par l'utilisateur :
+  - Typographie système/Roboto conservée (pas de nouvelle police, pas de dépendance ajoutée) ; effet impactant obtenu uniquement par la taille et la graisse des titres (classes `.display-title` / `.display-title--sm`).
+  - Palette de thème Vuetify chaude et familiale : `primary` `#C1552D` (terracotta), `secondary` `#E3A857` (ambre), `background` `#FBF6F0` (blanc cassé), texte à forte emphase `#2B2420`.
+  - Boutons en pilule (`rounded: 'pill'` par défaut sur `VBtn`), étiquettes de section en majuscules suivies d'un séparateur fin (`.section-kicker`), cartes de rubriques en lignes pleine largeur (icône + titre + description + bouton).
+  - Explicitement écartés : menu plein écran sombre, texte vertical sur les bords, formes décoratives organiques en arrière-plan.
 
 ## Qualité
 

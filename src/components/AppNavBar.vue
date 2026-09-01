@@ -19,10 +19,10 @@ function isActive(to: string) {
 </script>
 
 <template>
-  <v-app-bar flat border>
+  <v-app-bar flat color="background" class="app-nav-bar">
     <v-app-bar-nav-icon class="d-flex d-md-none" @click="drawer = !drawer" />
 
-    <v-toolbar-title>Family Story</v-toolbar-title>
+    <v-toolbar-title class="font-weight-black">Family Story</v-toolbar-title>
 
     <v-spacer />
 
@@ -32,6 +32,8 @@ function isActive(to: string) {
         :key="link.to"
         :to="link.to"
         variant="text"
+        class="app-nav-bar__link"
+        :class="{ 'app-nav-bar__link--active': isActive(link.to) }"
         :color="isActive(link.to) ? 'primary' : undefined"
       >
         {{ link.label }}
@@ -53,3 +55,23 @@ function isActive(to: string) {
     </v-list>
   </v-navigation-drawer>
 </template>
+
+<style scoped>
+.app-nav-bar {
+  border-bottom: 1px solid rgba(var(--v-theme-on-surface), 0.1);
+}
+
+.app-nav-bar__link {
+  position: relative;
+}
+
+.app-nav-bar__link--active::after {
+  content: '';
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 8px;
+  height: 2px;
+  background-color: rgb(var(--v-theme-primary));
+}
+</style>

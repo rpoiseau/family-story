@@ -14,6 +14,24 @@ const vuetify = createVuetify({
   directives,
   theme: {
     defaultTheme: 'light',
+    themes: {
+      light: {
+        colors: {
+          primary: '#C1552D',
+          'primary-darken-1': '#9C4423',
+          secondary: '#E3A857',
+          background: '#FBF6F0',
+          surface: '#FFFFFF',
+          'on-background': '#2B2420',
+          'on-surface': '#2B2420',
+        },
+      },
+    },
+  },
+  defaults: {
+    VBtn: {
+      rounded: 'pill',
+    },
   },
   icons: {
     defaultSet: 'mdi',
