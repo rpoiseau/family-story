@@ -4,14 +4,14 @@
 
 ## Objectif actuel
 
-Lot 0 validé et committé. Préparer et faire valider le plan détaillé du lot 1 (structure générale, thème et navigation).
+Lot 1 validé et committé. Préparer et faire valider le plan détaillé du lot 2 (page d'accueil).
 
 ## État global
 
-- Statut : lot 0 terminé et committé localement, lot 1 en attente de validation du plan
-- Lot courant : lot 1 — structure générale, thème et navigation
-- Dernière étape achevée : commit local du lot 0
-- Build : dernier `npm run build` réussi (type-check + vite build OK)
+- Statut : lots 0 et 1 terminés et committés localement, lot 2 en attente de plan/validation
+- Lot courant : lot 2 — page d'accueil
+- Dernière étape achevée : commit local du lot 1
+- Build : dernier `npm run build` réussi. Avertissement non bloquant : chunk JS/CSS principal > 500 kB après minification, car tous les composants et directives Vuetify sont enregistrés globalement (nécessaire car le point d'entrée `vuetify` de la version 4 n'inclut plus les composants par défaut). Optimisable plus tard par imports ciblés si besoin, non traité pour l'instant.
 
 ## Tâches terminées
 
@@ -25,7 +25,17 @@ Lot 0 validé et committé. Préparer et faire valider le plan détaillé du lot
 
 ## Tâche en cours
 
-Élaboration du plan détaillé du lot 1, en attente de validation explicite de l'utilisateur.
+Élaboration du plan détaillé du lot 2 (page d'accueil), en attente de présentation puis validation.
+
+## Détail de l'implémentation du lot 1
+
+- `src/router/index.ts` : les 6 routes prévues (`/`, `/famille`, `/what-brandon-think`, `/arbre-genealogique`, `/timeline`, route de rattrapage 404), chacune avec import différé (lazy loading).
+- Vues créées (contenu strictement minimal — un titre, pas de contenu fonctionnel, réservé aux lots 2 à 5) : `HomeView.vue`, `FamilleView.vue`, `WhatBrandonThinkView.vue`, `ArbreGenealogiqueView.vue`, `TimelineView.vue`, `NotFoundView.vue` (404 avec message générique et lien retour accueil).
+- `src/components/AppNavBar.vue` : barre de navigation horizontale sur ordinateur (`v-app-bar` + `v-btn`), menu hamburger sur mobile (`v-app-bar-nav-icon` + `v-navigation-drawer` temporaire), via les classes utilitaires responsive Vuetify (`d-none d-md-flex` / `d-flex d-md-none`).
+- `src/App.vue` intègre `AppNavBar` au-dessus de `router-view`.
+- **Bug détecté et corrigé** : Vuetify 4 n'enregistre plus automatiquement tous les composants/directives par défaut (changement de comportement vs Vuetify 3). `src/main.ts` importe désormais explicitement `vuetify/components` et `vuetify/directives` et les passe à `createVuetify`. Sans cela, aucun composant Vuetify ne s'affichait (avertissements Vue "Failed to resolve component").
+- Vérification manuelle effectuée dans Chrome : rendu desktop (barre horizontale, styles Vuetify appliqués), navigation entre `/` et `/famille` fonctionnelle, route inconnue affichant bien la page 404 avec lien de retour. Le test du menu hamburger en largeur mobile n'a pas pu être confirmé visuellement (le redimensionnement de fenêtre n'a pas été pris en compte par l'outil de test dans cet environnement) ; vérifié en revanche que le bouton hamburger est bien masqué et le menu horizontal bien affiché en largeur desktop (comportement CSS standard Vuetify basé sur le point de rupture `md`, à confirmer visuellement par vous sur mobile réel ou en réduisant la fenêtre du navigateur).
+- `npm run build` réussi avec un avertissement non bloquant (voir État global) sur la taille du bundle, lié à l'enregistrement global des composants Vuetify.
 
 ## Détail de l'implémentation du lot 0
 
