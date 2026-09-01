@@ -1,0 +1,20 @@
+# Dépendances
+node_modules/
+
+# Build
+dist/
+dist-ssr/
+
+# Système
+.DS_Store
+
+# Éditeurs / IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Logs
+*.log
+
+# Environnement local
+*.local
