@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useDisplay } from 'vuetify'
 import familyMembersData from '@/data/family-members.json'
 import type { FamilyMember } from '@/types/family-member'
+
+const { mobile } = useDisplay()
 
 const familyMembers: FamilyMember[] = familyMembersData
   .filter((member) => member.published)
@@ -22,7 +25,7 @@ function openMember(member: FamilyMember) {
 
     <v-row>
       <v-col v-for="member in familyMembers" :key="member.id" cols="6" sm="4" md="3">
-        <v-card class="text-center pa-4" hover @click="openMember(member)">
+        <v-card class="text-center pa-4 lift-on-hover" hover @click="openMember(member)">
           <v-avatar size="80" color="grey-lighten-3" class="mb-2">
             <v-img v-if="member.image" :src="member.image" :alt="member.imageAlt" />
             <v-icon v-else icon="mdi-account" size="40" color="grey-darken-1" />
@@ -32,7 +35,7 @@ function openMember(member: FamilyMember) {
       </v-col>
     </v-row>
 
-    <v-dialog v-model="dialog" max-width="480">
+    <v-dialog v-model="dialog" max-width="480" :fullscreen="mobile">
       <v-card v-if="selectedMember">
         <v-card-item>
           <div class="d-flex flex-column align-center text-center pa-4">

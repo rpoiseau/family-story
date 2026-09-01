@@ -4,13 +4,13 @@
 
 ## Objectif actuel
 
-Lots 4 et 5 validés par l'utilisateur (2026-09-01). Préparer et faire valider le plan détaillé du lot 6 (responsive, finitions visuelles et animations).
+Lot 6 (responsive, finitions visuelles et animations) implémenté selon le plan validé par l'utilisateur. En attente de validation de la tâche par l'utilisateur.
 
 ## État global
 
-- Statut : lots 0, 1, 2, 3, 4 et 5 terminés, committés localement et validés, lot 6 en attente de plan/validation
-- Lot courant : aucun — en attente d'instruction pour le lot 6 (responsive, finitions visuelles et animations)
-- Dernière étape achevée : validation utilisateur des lots 4 et 5
+- Statut : lots 0 à 6 terminés localement, lots 0 à 5 validés, lot 6 implémenté et en attente de validation
+- Lot courant : lot 6 — responsive, finitions visuelles et animations
+- Dernière étape achevée : implémentation et vérification (build + Chrome) du lot 6
 - Build : dernier `npm run build` réussi. Avertissement non bloquant : chunk JS/CSS principal > 500 kB après minification, car tous les composants et directives Vuetify sont enregistrés globalement (nécessaire car le point d'entrée `vuetify` de la version 4 n'inclut plus les composants par défaut). Optimisable plus tard par imports ciblés si besoin, non traité pour l'instant.
 
 ## Tâches terminées
@@ -25,7 +25,16 @@ Lots 4 et 5 validés par l'utilisateur (2026-09-01). Préparer et faire valider 
 
 ## Tâche en cours
 
-Aucune. En attente d'instruction pour le lot 6.
+Lot 6 implémenté, en attente de validation utilisateur.
+
+## Détail de l'implémentation du lot 6
+
+- `src/App.vue` : transition de fondu (0,15 s) entre les pages lors de la navigation ; classe utilitaire globale `.lift-on-hover` (léger soulèvement + ombre au survol, transition douce) réutilisée par l'accueil et la page famille.
+- `src/components/AppNavBar.vue` : le lien de navigation correspondant à la route active est désormais mis en évidence (couleur primaire), en version desktop et dans le menu mobile.
+- `src/views/HomeView.vue` : hauteur du bandeau « Image principale à venir » réduite sur mobile (200 px) et desktop (320 px) via `useDisplay()` ; cartes rubriques avec effet de survol harmonisé.
+- `src/views/FamilleView.vue` : fiche détaillée d'un membre ouverte en plein écran sur mobile (`v-dialog fullscreen`) pour une meilleure lisibilité ; cartes membres avec le même effet de survol que l'accueil.
+- Aucun contenu, donnée ou comportement fonctionnel modifié — uniquement des finitions visuelles réversibles conformes au plan validé.
+- Vérification manuelle dans Chrome (largeur desktop) : lien actif visible dans la navigation, transition de page fluide, effet de survol des cartes, ouverture/fermeture de la fiche membre fonctionnelles. Le redimensionnement de fenêtre vers une largeur mobile n'a pas été pris en compte par l'outil de test dans cet environnement (limitation déjà connue, voir lot 1) ; le comportement responsive (breakpoints Vuetify `useDisplay`) n'a donc pas pu être confirmé visuellement pour cette session et reste à vérifier par l'utilisateur sur mobile réel ou en réduisant la fenêtre du navigateur.
 
 ## Détail de l'implémentation des lots 4 et 5
 

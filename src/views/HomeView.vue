@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { useDisplay } from 'vuetify'
+
+const { mdAndUp } = useDisplay()
+
 const rubriques = [
   { label: 'La famille', to: '/famille', icon: 'mdi-account-group' },
   { label: 'What Brandon Think', to: '/what-brandon-think', icon: 'mdi-thought-bubble' },
@@ -16,7 +20,7 @@ const citations = [
   <v-container>
     <v-sheet
       color="grey-lighten-3"
-      height="320"
+      :height="mdAndUp ? 320 : 200"
       rounded
       class="d-flex flex-column align-center justify-center text-center mb-8"
     >
@@ -37,7 +41,7 @@ const citations = [
 
     <v-row class="mb-8">
       <v-col v-for="rubrique in rubriques" :key="rubrique.to" cols="6" md="3">
-        <v-card :to="rubrique.to" variant="outlined" class="text-center pa-4" hover>
+        <v-card :to="rubrique.to" variant="outlined" class="text-center pa-4 lift-on-hover" hover>
           <v-icon :icon="rubrique.icon" size="32" class="mb-2" />
           <div>{{ rubrique.label }}</div>
         </v-card>

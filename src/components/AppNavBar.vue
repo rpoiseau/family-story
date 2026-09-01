@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useRoute } from 'vue-router'
 
 const drawer = ref(false)
+const route = useRoute()
 
 const navLinks = [
   { label: 'Accueil', to: '/' },
@@ -10,6 +12,10 @@ const navLinks = [
   { label: 'Arbre généalogique', to: '/arbre-genealogique' },
   { label: 'Timeline', to: '/timeline' },
 ]
+
+function isActive(to: string) {
+  return route.path === to
+}
 </script>
 
 <template>
@@ -21,7 +27,13 @@ const navLinks = [
     <v-spacer />
 
     <div class="d-none d-md-flex">
-      <v-btn v-for="link in navLinks" :key="link.to" :to="link.to" variant="text">
+      <v-btn
+        v-for="link in navLinks"
+        :key="link.to"
+        :to="link.to"
+        variant="text"
+        :color="isActive(link.to) ? 'primary' : undefined"
+      >
         {{ link.label }}
       </v-btn>
     </div>
@@ -34,6 +46,8 @@ const navLinks = [
         :key="link.to"
         :to="link.to"
         :title="link.label"
+        :active="isActive(link.to)"
+        color="primary"
         @click="drawer = false"
       />
     </v-list>
