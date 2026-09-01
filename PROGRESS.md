@@ -4,13 +4,14 @@
 
 ## Objectif actuel
 
-Lot 1 validé et committé. Préparer et faire valider le plan détaillé du lot 2 (page d'accueil).
+Faire valider le lot 2 (page d'accueil) par l'utilisateur, puis committer.
 
 ## État global
 
-- Statut : lots 0 et 1 terminés et committés localement, lot 2 en attente de plan/validation
+- Statut : lots 0 et 1 committés localement ; lot 2 implémenté et vérifié manuellement, en attente de validation avant commit
 - Lot courant : lot 2 — page d'accueil
-- Dernière étape achevée : commit local du lot 1
+- Dernière étape achevée : implémentation et vérification manuelle du lot 2 (build + navigateur)
+- Build : `npm run build` réussi (même avertissement non bloquant que précédemment sur la taille du bundle Vuetify, sans changement)
 - Build : dernier `npm run build` réussi. Avertissement non bloquant : chunk JS/CSS principal > 500 kB après minification, car tous les composants et directives Vuetify sont enregistrés globalement (nécessaire car le point d'entrée `vuetify` de la version 4 n'inclut plus les composants par défaut). Optimisable plus tard par imports ciblés si besoin, non traité pour l'instant.
 
 ## Tâches terminées
@@ -25,7 +26,13 @@ Lot 1 validé et committé. Préparer et faire valider le plan détaillé du lot
 
 ## Tâche en cours
 
-Élaboration du plan détaillé du lot 2 (page d'accueil), en attente de présentation puis validation.
+Lot 2 implémenté, en attente de validation explicite de l'utilisateur avant commit.
+
+## Détail de l'implémentation du lot 2
+
+- `src/views/HomeView.vue` : espace réservé pour l'image principale (`v-sheet` gris avec icône et mention « Image principale à venir », en attendant que l'image soit fournie et validée), descriptif `Lorem ipsum`, 4 cartes cliquables vers les rubriques (La famille, What Brandon Think, Arbre généalogique, Timeline), 2 citations `Lorem ipsum` en cartes.
+- Aucun contenu familial réel ou inventé : uniquement du `Lorem ipsum` et des libellés déjà validés (noms des rubriques, titre du site).
+- Vérification manuelle dans Chrome : rendu correct, cartes de rubriques cliquables et fonctionnelles (testé le lien vers `/famille`).
 
 ## Détail de l'implémentation du lot 1
 
