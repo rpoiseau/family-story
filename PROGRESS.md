@@ -4,13 +4,13 @@
 
 ## Objectif actuel
 
-Lot 6 (responsive, finitions visuelles et animations) implémenté selon le plan validé par l'utilisateur. En attente de validation de la tâche par l'utilisateur.
+Lot 6 validé par l'utilisateur (2026-09-01). Lot 7 (GitHub Actions et déploiement GitHub Pages) proposé mais explicitement non démarré à la demande de l'utilisateur ("ne fait pas le lot suivant tout de suite").
 
 ## État global
 
-- Statut : lots 0 à 6 terminés localement, lots 0 à 5 validés, lot 6 implémenté et en attente de validation
-- Lot courant : lot 6 — responsive, finitions visuelles et animations
-- Dernière étape achevée : implémentation et vérification (build + Chrome) du lot 6
+- Statut : lots 0 à 6 terminés, committés localement et validés. Lot 7 non démarré.
+- Lot courant : aucun — en attente d'instruction pour démarrer le lot 7
+- Dernière étape achevée : validation utilisateur du lot 6
 - Build : dernier `npm run build` réussi. Avertissement non bloquant : chunk JS/CSS principal > 500 kB après minification, car tous les composants et directives Vuetify sont enregistrés globalement (nécessaire car le point d'entrée `vuetify` de la version 4 n'inclut plus les composants par défaut). Optimisable plus tard par imports ciblés si besoin, non traité pour l'instant.
 
 ## Tâches terminées
@@ -25,7 +25,7 @@ Lot 6 (responsive, finitions visuelles et animations) implémenté selon le plan
 
 ## Tâche en cours
 
-Lot 6 implémenté, en attente de validation utilisateur.
+Aucune. En attente d'instruction explicite pour démarrer le lot 7.
 
 ## Détail de l'implémentation du lot 6
 
