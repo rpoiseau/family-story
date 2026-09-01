@@ -4,13 +4,13 @@
 
 ## Objectif actuel
 
-Lot 3 validé et committé. Préparer et faire valider le plan détaillé du lot 4 (page What Brandon Think).
+Lots 4 et 5 implémentés (sur instruction explicite de l'utilisateur de les enchaîner sans validation intermédiaire) et committés. Prochain lot (6) en attente de validation.
 
 ## État global
 
-- Statut : lots 0, 1, 2 et 3 terminés et committés localement, lot 4 en attente de plan/validation
-- Lot courant : lot 4 — page What Brandon Think
-- Dernière étape achevée : commit local du lot 3
+- Statut : lots 0, 1, 2, 3, 4 et 5 terminés et committés localement, lot 6 en attente de plan/validation
+- Lot courant : aucun — en attente d'instruction pour le lot 6 (responsive, finitions visuelles et animations)
+- Dernière étape achevée : commit local du lot 5
 - Build : dernier `npm run build` réussi. Avertissement non bloquant : chunk JS/CSS principal > 500 kB après minification, car tous les composants et directives Vuetify sont enregistrés globalement (nécessaire car le point d'entrée `vuetify` de la version 4 n'inclut plus les composants par défaut). Optimisable plus tard par imports ciblés si besoin, non traité pour l'instant.
 
 ## Tâches terminées
@@ -25,7 +25,15 @@ Lot 3 validé et committé. Préparer et faire valider le plan détaillé du lot
 
 ## Tâche en cours
 
-Aucune. En attente d'instruction pour le lot 4.
+Aucune. En attente d'instruction pour le lot 6.
+
+## Détail de l'implémentation des lots 4 et 5
+
+- `src/components/UnderConstruction.vue` (nouveau composant réutilisable, choix technique interne non structurant) : props `title` et `icon`, affiche icône Vuetify, titre, chip « En construction » et bouton « Retour à l'accueil ».
+- `src/views/WhatBrandonThinkView.vue` (lot 4), `src/views/ArbreGenealogiqueView.vue` et `src/views/TimelineView.vue` (lot 5) : utilisent désormais `UnderConstruction` avec leur titre et une icône MDI dédiée (`mdi-thought-bubble`, `mdi-family-tree`, `mdi-timeline-clock`, cohérentes avec les icônes déjà utilisées sur l'accueil).
+- Aucun contenu fonctionnel futur inventé : seules les indications déjà validées dans `CLAUDE.md` (titre, mention « En construction », illustration/icône, retour accueil) ont été ajoutées.
+- Vérification manuelle dans Chrome : les 3 pages affichent correctement titre, icône, chip et bouton ; le bouton « Retour à l'accueil » ramène bien vers `/`.
+- Lots enchaînés sans validation intermédiaire sur instruction explicite de l'utilisateur (2026-09-01).
 
 ## Détail de l'implémentation du lot 3
 

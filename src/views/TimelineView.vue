@@ -1,7 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import UnderConstruction from '@/components/UnderConstruction.vue'
+</script>
 
 <template>
-  <v-container>
-    <h1>Timeline</h1>
-  </v-container>
+  <UnderConstruction title="Timeline" icon="mdi-timeline-clock" />
 </template>
