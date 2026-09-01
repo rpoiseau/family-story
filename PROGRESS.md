@@ -4,14 +4,13 @@
 
 ## Objectif actuel
 
-Faire valider le lot 2 (page d'accueil) par l'utilisateur, puis committer.
+Lot 3 validé et committé. Préparer et faire valider le plan détaillé du lot 4 (page What Brandon Think).
 
 ## État global
 
-- Statut : lots 0 et 1 committés localement ; lot 2 implémenté et vérifié manuellement, en attente de validation avant commit
-- Lot courant : lot 2 — page d'accueil
-- Dernière étape achevée : implémentation et vérification manuelle du lot 2 (build + navigateur)
-- Build : `npm run build` réussi (même avertissement non bloquant que précédemment sur la taille du bundle Vuetify, sans changement)
+- Statut : lots 0, 1, 2 et 3 terminés et committés localement, lot 4 en attente de plan/validation
+- Lot courant : lot 4 — page What Brandon Think
+- Dernière étape achevée : commit local du lot 3
 - Build : dernier `npm run build` réussi. Avertissement non bloquant : chunk JS/CSS principal > 500 kB après minification, car tous les composants et directives Vuetify sont enregistrés globalement (nécessaire car le point d'entrée `vuetify` de la version 4 n'inclut plus les composants par défaut). Optimisable plus tard par imports ciblés si besoin, non traité pour l'instant.
 
 ## Tâches terminées
@@ -26,7 +25,14 @@ Faire valider le lot 2 (page d'accueil) par l'utilisateur, puis committer.
 
 ## Tâche en cours
 
-Lot 2 implémenté, en attente de validation explicite de l'utilisateur avant commit.
+Aucune. En attente d'instruction pour le lot 4.
+
+## Détail de l'implémentation du lot 3
+
+- `src/types/family-member.ts` : type `FamilyMember` (`id`, `displayName`, `portrait`, `image`, `imageAlt`, `tags`, `order`, `published`), conforme à la structure JSON validée dans `DECISIONS.md`.
+- `src/data/family-members.json` : 4 membres placeholder (« Membre 1 » à « Membre 4 »), portraits en `Lorem ipsum`, aucune image réelle (`image` vide, avatar de repli affiché). Aucun contenu familial réel ou inventé.
+- `src/views/FamilleView.vue` : grille de cartes (avatar + nom), clic sur une carte ouvrant une fiche détaillée (`v-dialog`) avec le portrait complet.
+- Vérification manuelle dans Chrome : grille affichée correctement, icônes de repli visibles, ouverture/fermeture de la fiche détaillée fonctionnelle.
 
 ## Détail de l'implémentation du lot 2
 
