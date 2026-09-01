@@ -4,13 +4,13 @@
 
 ## Objectif actuel
 
-Lots 4 et 5 implémentés (sur instruction explicite de l'utilisateur de les enchaîner sans validation intermédiaire) et committés. Prochain lot (6) en attente de validation.
+Lots 4 et 5 validés par l'utilisateur (2026-09-01). Préparer et faire valider le plan détaillé du lot 6 (responsive, finitions visuelles et animations).
 
 ## État global
 
-- Statut : lots 0, 1, 2, 3, 4 et 5 terminés et committés localement, lot 6 en attente de plan/validation
+- Statut : lots 0, 1, 2, 3, 4 et 5 terminés, committés localement et validés, lot 6 en attente de plan/validation
 - Lot courant : aucun — en attente d'instruction pour le lot 6 (responsive, finitions visuelles et animations)
-- Dernière étape achevée : commit local du lot 5
+- Dernière étape achevée : validation utilisateur des lots 4 et 5
 - Build : dernier `npm run build` réussi. Avertissement non bloquant : chunk JS/CSS principal > 500 kB après minification, car tous les composants et directives Vuetify sont enregistrés globalement (nécessaire car le point d'entrée `vuetify` de la version 4 n'inclut plus les composants par défaut). Optimisable plus tard par imports ciblés si besoin, non traité pour l'instant.
 
 ## Tâches terminées
