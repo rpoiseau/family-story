@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useDisplay } from 'vuetify'
 import QuoteBlock from '@/components/QuoteBlock.vue'
+import familyImage from '@/assets/images/family.png'
 import brandonReport from '@/data/brandon-thoughts.json'
 import familyMembersData from '@/data/family-members.json'
 import type { BrandonReport } from '@/types/brandon-report'
@@ -61,14 +62,13 @@ const rubriques = [
 
 <template>
   <v-container>
-    <v-sheet
-      color="grey-lighten-3"
-      :height="mdAndUp ? 320 : 200"
-      rounded
-      class="d-flex flex-column align-center justify-center text-center mb-8"
-    >
-      <v-icon icon="mdi-image-outline" size="48" color="grey-darken-1" />
-      <p class="text-grey-darken-1 mt-2 mb-0">Image principale à venir</p>
+    <v-sheet rounded class="mb-8 overflow-hidden hero-image-wrapper">
+      <v-img
+        :src="familyImage"
+        alt="Portrait illustré de la famille"
+        :height="mdAndUp ? 320 : 200"
+        cover
+      />
     </v-sheet>
 
     <v-row justify="center" class="mb-10">
