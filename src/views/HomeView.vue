@@ -66,8 +66,7 @@ const rubriques = [
       <v-img
         :src="familyImage"
         alt="Portrait illustré de la famille"
-        :height="mdAndUp ? 320 : 200"
-        cover
+        :aspect-ratio="1536 / 1024"
       />
     </v-sheet>
 
