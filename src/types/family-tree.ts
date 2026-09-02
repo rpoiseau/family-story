@@ -27,13 +27,3 @@ export interface FamilyTree {
   persons: FamilyTreePerson[]
   unions: FamilyTreeUnion[]
 }
-
-/** Groupe d'affichage d'une génération : une personne seule, ou un couple relié par un connecteur */
-export interface FamilyTreeBlock {
-  id: string
-  /** Colonne de grille CSS 1-indexée */
-  startColumn: number
-  span: 1 | 2
-  persons: FamilyTreePerson[]
-  unionType?: UnionType
-}

@@ -12,12 +12,14 @@
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
+    "d3-shape": "^3.2.0",
     "vue": "^3.5.40",
     "vue-router": "^5.2.0",
     "vuetify": "^4.1.12"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.4",
+    "@types/d3-shape": "^3.2.0",
     "@types/node": "^24.13.3",
     "@vitejs/plugin-vue": "^6.0.8",
     "@vue/tsconfig": "^0.9.1",

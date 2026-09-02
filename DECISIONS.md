@@ -35,7 +35,8 @@
 - Le rapport Brandon ne fournissant aucune filiation fiable, l'arbre était resté en construction. L'utilisateur a fourni directement, en conversation (mode plan), l'arbre généalogique complet de la famille : cette source directe est légitime au sens de `.claude/rules/data-privacy.md` (« tout contenu doit provenir du rapport Brandon ou de l'utilisateur »).
 - Extension explicite de l'exception « mineurs » : les prénoms des 4 enfants mineurs (Nina, Jeanne, Louis, Paul) apparaissent dans l'arbre, sans aucune autre donnée (âge, photo, anecdote, santé). Actée dans `.claude/rules/data-privacy.md`.
 - Modèle de données dédié validé : `src/types/family-tree.ts` et `src/data/family-tree.json`, distinct du modèle « portrait » (`family-member.ts`/`family-members.json`).
-- Représentation visuelle validée : un arbre stylé par génération, en CSS pur (grille + connecteurs), sans nouvelle dépendance ; le composant natif `VTreeview` de Vuetify a été explicitement écarté (mal adapté aux couples à deux parents).
+- Représentation visuelle validée : un arbre stylé par génération, positionné en canvas SVG unique (`FamilyTreeCanvas.vue`), avec des branches courbes générées via `d3-shape` (voir section Technique) ; le composant natif `VTreeview` de Vuetify a été explicitement écarté (mal adapté aux couples à deux parents). Remplace la première version en CSS pur (grille + connecteurs), jugée insuffisamment lisible comme arbre généalogique (2026-09-02).
+- Restylage du 2026-09-02 (sur demande explicite « améliore significativement le style et la vue » puis « utilise d3js pour faire l'arbre ») : pas de distinction visuelle par icône entre conjoint/compagnon (uniquement trait plein/pointillé, sans légende) ; pas de mise en avant visuelle de la racine de l'arbre.
 - Fusion de pages validée : `/famille` devient la seule vue et affiche désormais l'arbre (la grille de cartes en vrac a disparu) ; `/arbre-genealogique` redirige vers `/famille`.
 - Clic sur une personne sans fiche portrait (Pierre, et les 4 mineurs) : mini-fiche avec prénom + lien de parenté uniquement, sans invention de contenu.
 
@@ -65,6 +66,7 @@
 - `nvm use stable` avant toute commande npm
 - Pinia interdit sans besoin réel et validation
 - Nouvelle dépendance interdite sans accord explicite
+- `d3-shape` (+ `@types/d3-shape` en devDependency) ajoutée le 2026-09-02, sur demande explicite de l'utilisateur (« utilise d3js pour faire l'arbre »), utilisée uniquement pour générer les chemins SVG courbes des branches de l'arbre généalogique (`d3.linkVertical`), dans `FamilyTreeCanvas.vue`. Pas de manipulation du DOM par D3 (sélection/binding) : Vue reste seul maître du DOM, D3 sert uniquement au calcul des tracés.
 - Données dans des fichiers JSON locaux avec types TypeScript correspondants
 - Images stockées dans le dépôt
 - Frontend uniquement
