@@ -13,13 +13,31 @@
 ## Pages
 
 - Accueil
-- La famille
-- What Brandon Think, en construction
-- Arbre généalogique, en construction
-- Timeline, en construction
+- La famille, fusionnée avec l'arbre généalogique depuis le 2026-09-02 (voir section dédiée)
+- What Brandon Think, alimentée depuis le 2026-09-01
+- Timeline, alimentée depuis le 2026-09-01
 - Page 404
 - Pas de galerie dédiée
 - Pas de contact
+- `/arbre-genealogique` : route conservée en redirection vers `/famille` (n'apparaît plus dans le menu ni sur l'accueil)
+
+## Contenu éditorial (2026-09-01)
+
+- Source unique du contenu : le rapport satirique « La chti family! » généré par le service What Brandon Thinks à partir du groupe WhatsApp familial (9 754 messages, six ans), fourni par l'utilisateur.
+- Mode de reprise validé : **reprise quasi intégrale** du texte du rapport, réparti dans les JSON locaux. Aucune réécriture, aucun ajout inventé.
+- Prénoms et communes réels **conservés**, sur décision explicite de l'utilisateur, malgré le caractère public de GitHub Pages.
+- Anecdotes de santé et mentions d'enfants **conservées**, sur la même décision.
+- La règle « `Lorem ipsum` uniquement » est levée : le site ne contient plus de contenu temporaire.
+- Structure `FamilyMember` étendue et validée : ajout de `role`, `emoji` et `quotes` aux champs existants.
+- Nouveaux fichiers de données validés : `brandon-thoughts.json` et `events.json`, avec leurs types `BrandonReport` et `TimelineEvent`.
+## Arbre généalogique (2026-09-01/02)
+
+- Le rapport Brandon ne fournissant aucune filiation fiable, l'arbre était resté en construction. L'utilisateur a fourni directement, en conversation (mode plan), l'arbre généalogique complet de la famille : cette source directe est légitime au sens de `.claude/rules/data-privacy.md` (« tout contenu doit provenir du rapport Brandon ou de l'utilisateur »).
+- Extension explicite de l'exception « mineurs » : les prénoms des 4 enfants mineurs (Nina, Jeanne, Louis, Paul) apparaissent dans l'arbre, sans aucune autre donnée (âge, photo, anecdote, santé). Actée dans `.claude/rules/data-privacy.md`.
+- Modèle de données dédié validé : `src/types/family-tree.ts` et `src/data/family-tree.json`, distinct du modèle « portrait » (`family-member.ts`/`family-members.json`).
+- Représentation visuelle validée : un arbre stylé par génération, en CSS pur (grille + connecteurs), sans nouvelle dépendance ; le composant natif `VTreeview` de Vuetify a été explicitement écarté (mal adapté aux couples à deux parents).
+- Fusion de pages validée : `/famille` devient la seule vue et affiche désormais l'arbre (la grille de cartes en vrac a disparu) ; `/arbre-genealogique` redirige vers `/famille`.
+- Clic sur une personne sans fiche portrait (Pierre, et les 4 mineurs) : mini-fiche avec prénom + lien de parenté uniquement, sans invention de contenu.
 
 ## Accueil
 
@@ -31,9 +49,10 @@
 
 ## La famille
 
-- Grille de cartes ouvrant une fiche détaillée
+- Affichée sous forme d'arbre généalogique par génération depuis le 2026-09-02 (voir section « Arbre généalogique »), chaque personne avec fiche portrait ouvrant la fiche détaillée au clic
 - Portraits satiriques exclusivement rédigés par l'utilisateur
-- Structure JSON initiale approuvée : `id`, `displayName`, `portrait`, `image`, `imageAlt`, `tags`, `order`, `published`
+- Structure JSON du modèle portrait : `id`, `displayName`, `role`, `emoji`, `portrait`, `quotes`, `image`, `imageAlt`, `tags`, `order`, `published`
+- Structure JSON du modèle arbre (relations, distinct du portrait) : `FamilyTreePerson` (`id`, `firstName`, `generation`, `order`, `relationLabel`, `isMinor`) et `FamilyTreeUnion` (`id`, `partners`, `type`, `children`)
 
 ## Technique
 
@@ -90,5 +109,6 @@
 6. Lot 5 : pages Arbre généalogique et Timeline en construction
 7. Lot 6 : responsive, finitions visuelles et animations
 8. Lot 7 : GitHub Actions et déploiement GitHub Pages
+9. Lot 8 (2026-09-02) : arbre généalogique réel, fusionné avec la page La famille
 
 Chaque lot doit être validé avant de commencer le suivant. À sa fin, fournir un résumé, les fichiers modifiés, le résultat du build, les décisions restantes, les vérifications manuelles et la proposition du lot suivant.

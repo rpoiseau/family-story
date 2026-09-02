@@ -20,8 +20,7 @@ const router = createRouter({
     },
     {
       path: '/arbre-genealogique',
-      name: 'arbre-genealogique',
-      component: () => import('../views/ArbreGenealogiqueView.vue'),
+      redirect: '/famille',
     },
     {
       path: '/timeline',

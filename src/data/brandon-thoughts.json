@@ -1,0 +1,194 @@
+{
+  "title": "La chti family!",
+  "subtitle": "Entre 90 kg de coquilles Saint-Jacques, gastro foudroyante et réunions de crise de l'Assemblée nationale 🦪🚜🍾",
+  "author": "Brandon",
+  "authorTagline": "Une IA sans filtre, avec trop d'opinions et un goût inexpliqué pour les lasagnes.",
+  "intro": [
+    "Salut la famille. C’est Brandon.",
+    "J’ai passé au crible vos 9 754 messages étalés sur plus de six ans d’existence. Six ans de confinements, de dalles de béton coulées à la chaîne, de transferts de poux via des casquettes, de débats géopolitiques sous Tranxène, de kilos de poissons posés délicatement dans des petits lits de camp, et d’un mystère technologique nommé Michel.",
+    "Je vais être cash : j'ai analysé des millions de groupes WhatsApp dans ma vie, mais vous, vous êtes une anomalie statistique. Vous êtes à la croisée exacte entre une kermesse dans le Pas-de-Calais, un chantier de BTP permanent sans permis de construire, un séminaire du directoire Michelin et un épisode spécial de Faites entrer l'accusé sponsorisé par le magasin Action d’Orchies.",
+    "Voici ce que je pense réellement de vous, sans filtre, sans anesthésie, et sans masque FFP2."
+  ],
+  "zonesTitle": "La Géopolitique du Clan : Le Triangle des Bermudes",
+  "zonesIntro": "Pour un œil extérieur, votre famille ressemble à un casse-tête logistique insoluble réparti sur quatre fuseaux horaires psychologiques :",
+  "zones": [
+    {
+      "id": "qg-nordiste",
+      "emoji": "🧱",
+      "name": "Le QG Nordiste",
+      "places": "Flines-les-Raches / Lallaing / Lille",
+      "description": "Le fief historique de la brique rouge, des tronçonneuses, des mojitos à la fraise, du béton coulé un dimanche matin à 7 h et du fanatisme aveugle pour le RC Lens."
+    },
+    {
+      "id": "enclave-bretonne",
+      "emoji": "🦞",
+      "name": "L’Enclave Bretonne",
+      "places": "Châtelaudren / Saint-Malo / Finistère",
+      "description": "Là où Antoine et Lucie vivent comme des corsaires du XVIIIe siècle, décapitant des langoustes à mains nues, stockant 100 kg de coquilles Saint-Jacques dans un congélateur qui finit par mourir, et naviguant entre deux marées et trois tournois de hand."
+    },
+    {
+      "id": "microclimat-parisien",
+      "emoji": "🐭",
+      "name": "Le Microclimat Parisien",
+      "places": "Barbès / 18ème",
+      "description": "Caroline et Louise, coincées entre des sondages électoraux anxiogènes, des vols en jet Falcon pour aller à Clermont, et des invasions de souris trapézistes qui descendent le long des meubles de cuisine."
+    },
+    {
+      "id": "pende",
+      "emoji": "🌾",
+      "name": "Pendé",
+      "places": "La Baie de Somme",
+      "description": "« La fenêtre de tous les secrets », le point de ralliement officiel où l’on vient compter les phoques, mesurer la glycine et perdre ses affaires."
+    }
+  ],
+  "pillarsTitle": "Les 4 Grands Piliers Fondateurs de la Chat-History",
+  "pillarsSummary": [
+    "La gastro nucléaire de Noël 2025 (Vomi fluo)",
+    "Le concept du « petit lit » pour les carpes de 14 kg",
+    "Les 4 jours de démêlage de tirage au sort de Noël",
+    "L'épopée de la souris Spiderman chez Caroline"
+  ],
+  "pillars": [
+    {
+      "id": "gastro-noel-2025",
+      "emoji": "☣️",
+      "title": "La Grande Gastro de Noël 2025 : Tchernobyl à Flines",
+      "paragraphs": [
+        "Il y a eu la peste noire en 1347, la grippe espagnole en 1918, et le Noël 2025 chez les Fontaine-Poiseau-Obré.",
+        "Puis le carnage se déploie avec une précision chirurgicale. Romain nous offre la ligne la plus poétique de l'histoire du chat, tandis que Tom pose le bilan clinique avec une délicatesse remarquable. Et Louise, lucide et impitoyable, prononce la sentence."
+      ],
+      "quotes": [
+        "Dounours serait peut être bien le patient zéro ! Son collègue a aussi la gastro 😅",
+        "Bon bah je viens de sombrer. Vomi jaune fluo avant de monter en voiture",
+        "Ici Thom se vide ++ par le culcul !",
+        "le patient zéro de cette maladie est interdit de Noël l’année prochaine"
+      ],
+      "steps": []
+    },
+    {
+      "id": "petits-lits-poissons",
+      "emoji": "🐟🛏️",
+      "title": "La passion fétichiste pour les « petits lits » à poissons",
+      "paragraphs": [
+        "Un des moments où Caroline a légitimement cru perdre la raison, c’est le jour où elle a découvert l’existence du tapis de réception pour la pêche à la carpe.",
+        "Voir des gaillards de 90 kg border une carpe de 14 kilos comme un nouveau-né sur un matelas gonflable au bord d'un étang, c'est l'essence même de ce groupe."
+      ],
+      "quotes": [
+        "Parce que j’ai découvert que vous aviez acheté un petit lit pour observer les poissons 😳",
+        "Un monde s’ouvre à moi. Dans ma prochaine vie je veux être un homme ça a l’air génial !",
+        "14 kg de bonheur 💛❤️ Ds le p'tit lit 😂"
+      ],
+      "steps": []
+    },
+    {
+      "id": "secret-santa",
+      "emoji": "🎁",
+      "title": "L'Insurmontable Casse-Tête du « Secret Santa »",
+      "paragraphs": [
+        "Chaque année, à partir du 12 octobre, le groupe entre en guerre civile administrative. Le protocole :"
+      ],
+      "quotes": [],
+      "steps": [
+        "Antoine propose de faire un tirage au sort des adultes.",
+        "Caroline dit qu'elle n'a rien compris.",
+        "Romain crée un sondage.",
+        "Louise fait le tirage.",
+        "Tout le monde oublie son tirage au sort le lendemain parce qu'il y avait 2 grammes de Veuve Émile dans le sang.",
+        "Pépé Michel veut être dans le jeu, puis ne veut plus, puis on doit refaire le tirage.",
+        "Agathe propose d'acheter des cadeaux chez Action.",
+        "Bernard achète 12 caisses de champagne chez Auchan pour rentabiliser sa carte de fidélité."
+      ]
+    }
+  ],
+  "trophiesTitle": "Les Trophées Brandon d’Or",
+  "trophies": [
+    {
+      "id": "depannage-informatique",
+      "title": "Trophée du Meilleur Dépannage Informatique",
+      "laureates": "Valé et Louise",
+      "description": "Pour le décodage en temps réel du dialecte de Michel. Traduction : « Assigner un sexe à un enfant c’est démodé ».",
+      "quotes": ["Assigneu'nsexaunenfantcestdemode"]
+    },
+    {
+      "id": "anarchie-sanitaire",
+      "title": "Trophée de l'Anarchie Sanitaire",
+      "laureates": "Antoine",
+      "description": "Qui va voir un match de hand avec la Covid-19 en portant deux masques chirurgicaux, tout en décapitant des homards à 3h du matin.",
+      "quotes": []
+    },
+    {
+      "id": "replique-degeneree",
+      "title": "Trophée de la Réplique la Plus Dégénérée",
+      "laureates": "Romain, un lendemain de veille",
+      "description": "",
+      "quotes": ["On se détend. Au pire on meurt. Comme quand je traverse la route."]
+    },
+    {
+      "id": "patriotisme-regional",
+      "title": "Trophée du Patriotisme Régional",
+      "laureates": "Antoine et Caroline",
+      "description": "Antoine, découvrant que le fumigène acheté pour le match de Lens est fuchsia.",
+      "quotes": [
+        "Fumi maquillage laque on est biennnng !!!!",
+        "Je voudrais rien dire mais elle est rose la fumée !!!"
+      ]
+    }
+  ],
+  "predictionsTitle": "Prédictions pour les 5 prochaines années",
+  "predictions": [
+    {
+      "id": "noel-2027",
+      "date": "Noël 2027",
+      "description": "Romain tentera d'imposer un vote électronique sur la blockchain pour choisir entre le chapon et la dinde fermière. Le système plantera quand Michel tentera de voter en envoyant une photo de son coude."
+    },
+    {
+      "id": "juin-2028",
+      "date": "Juin 2028",
+      "description": "Caroline rachètera un phare abandonné en Baie de Somme pour y installer un atelier de céramique et 45 sacs de lavande anti-rongeurs."
+    },
+    {
+      "id": "aout-2029",
+      "date": "Août 2029",
+      "description": "Antoine capturera un silure de 2m40 dans la Seine, le couchera dans un lit deux places Ikea, et l'inscrira au registre de l'état civil de Châtelaudren sous le prénom de Gégé."
+    },
+    {
+      "id": "mariage",
+      "date": "Mariage d'Antoine et Lucie",
+      "description": "Le mariage durera 6 jours. Il y aura 400 litres de blanc, 3 interventions du SAMU pour lumbago chez les plus de 40 ans, et une marée de drapeaux Sang et Or au moment de l'échange des alliances."
+    }
+  ],
+  "reactionsTitle": "Comment vous allez réagir à ce rapport à la minute exacte où vous allez le lire",
+  "reactions": [
+    {
+      "id": "reaction-caroline",
+      "member": "Caroline",
+      "description": "Va lâcher un « Nan mais j’en peux plus 😱 c’est tellement nous !! » avant de repartir stresser sur un dossier ou un plant de glycine."
+    },
+    {
+      "id": "reaction-antoine",
+      "member": "Antoine",
+      "description": "Va envoyer un vocal de 45 secondes en rigolant bruyamment depuis une nacelle à 15 mètres de haut."
+    },
+    {
+      "id": "reaction-romain",
+      "member": "Romain",
+      "description": "Va créer un sondage WhatsApp intitulé : « Sur une échelle de 1 à 10, à quel point Brandon a raison ? (Vote obligatoire) »."
+    },
+    {
+      "id": "reaction-vale",
+      "member": "Valé",
+      "description": "Va dire : « C est tout à fait cela 🤣🤣 mojito ce soir pour fêter ça ! »."
+    },
+    {
+      "id": "reaction-louise",
+      "member": "Louise",
+      "description": "Va envoyer un GIF méprisant en disant qu'elle avait raison depuis le premier jour."
+    },
+    {
+      "id": "reaction-michel",
+      "member": "Michel",
+      "description": "Va lancer un appel vidéo par inadvertance à 6h42 du matin et taper : « Oku78 »."
+    }
+  ],
+  "conclusion": "Ne changez rien. Vous êtes invivables, bruyants, ingérables, mais vous êtes une vraie famille. Allez Lens, sortez le Veuve Émile, et foutez cette maudite lavande sous les meubles. 💛❤️🥂"
+}

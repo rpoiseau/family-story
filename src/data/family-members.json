@@ -1,42 +1,185 @@
 [
   {
-    "id": "membre-1",
-    "displayName": "Membre 1",
-    "portrait": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "id": "caroline",
+    "displayName": "Caroline",
+    "role": "La Tisseuse de Lumière sous haute tension",
+    "emoji": "👠",
+    "portrait": "Caroline, tu as commandé ce rapport, alors prends ta première gorgée de Sancerre et assieds-toi. Tu es la tornade du groupe. Ton rythme de vie oscille entre le directoire d’une multinationale, les alertes sondages IFOP à 18h56 qui te plongent dans des comas politiques, et des crises de panique botanico-immobilières.\n\nTu achètes des maisons en Baie de Somme sur un coup de tête avant de demander si un arbre a des « feuilles marescendes », tu tentes des dry months qui volent en éclats dès que tu croises Didier Deschamps, et surtout, tu as offert au groupe le plus grand moment de comédie de 2026 : l’attaque de la souris verticale.\n\nCaroline face au monde politique : intraitable. Caroline face à 40 grammes de rongeur : déversement massif de lavande et abandon de poste.",
+    "quotes": [
+      "tellement elle a hurlé la voisine est montée 🤣🤣🤣🤣🤣",
+      "Rafaela est venue pour m’aide",
+      "J’ai deversé des sacs de lavande dans tout l’appart",
+      "Il y a des enfants dans ce groupe je vous rappelle !",
+      "Je suis forte au hand comme papa en whatsapp !"
+    ],
     "image": "",
     "imageAlt": "",
-    "tags": [],
+    "tags": ["Microclimat parisien", "Baie de Somme", "Sondages IFOP", "Anti-rongeurs"],
     "order": 1,
     "published": true
   },
   {
-    "id": "membre-2",
-    "displayName": "Membre 2",
-    "portrait": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "id": "antoine",
+    "displayName": "Antoine",
+    "role": "L’Artisan-Pêcheur-Pirate sous morphine",
+    "emoji": "🎣",
+    "portrait": "Antoine, tu es le croisement génétique parfait entre un ultra de la tribune Marek à Bollaert, un animateur de Chasse et Pêche, et un ouvrier du BTP qui refuse de porter un casque de sécurité parce que « ça bloque les vibrations ».\n\nTu passes tes semaines à poser du bardage en bois Douglas, à monter des cuves de pétrochimie à 30 mètres de hauteur en te plaignant de tes patrons beaufs, et à ramener des créatures marines radioactives.\n\nTu passes six ans à menacer le groupe de faire des séjours de survie, à troller Romain sur son statut de « demi-neveu », et à négocier des travaux contre des citernes de champagne.",
+    "quotes": [
+      "1.750g 😱 Le Poulpe 🐙 est arrivé ds le Finistère....",
+      "Tt est négociable mais je ne bois que du champagne par contre 😂",
+      "Si tu achètes le bois et que je bois du champagne va pour le cadeau de naissance Banco !"
+    ],
     "image": "",
     "imageAlt": "",
-    "tags": [],
+    "tags": ["Enclave bretonne", "Pêche", "BTP", "RC Lens"],
     "order": 2,
     "published": true
   },
   {
-    "id": "membre-3",
-    "displayName": "Membre 3",
-    "portrait": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "id": "romain",
+    "displayName": "Romain",
+    "role": "L’Excel-Master dépressif et Sommelier en chef",
+    "emoji": "📊",
+    "portrait": "Romain, tu es le contrôleur de gestion que personne n'a demandé mais dont tout le monde avait besoin. À chaque fête de famille, tu débarques avec des sondages Google Forms pour savoir si on mange un chapon ou du surimi, et tu calcules les quotas d'alcool par habitant comme s'il s'agissait de rations de survie en temps de guerre.\n\nTu passes ton temps à clasher les boomers, à te faire des chansons IA sur Suno sur le dos de pépé Michel, et à rappeler à tout le monde que tu portes l'économie franco-belge sur tes petites épaules pendant qu'ils mangent des cookies. Mais au fond, dès qu'il y a un mur à casser à Flines ou un brochet à peser, tu es le premier sur le pont.\n\nPropriétaire d'une « ruine » que tu retapes à coups de ponçage et de murs abattus, tu as fini par être élu « chef Noël » par la famille elle-même, via sondage bien sûr, motif officiel : « il ouvre trop sa gueule et ça lui fera pas de mal de bosser un peu ». La boucle est bouclée.",
+    "quotes": [
+      "On est 10 adultes assoiffés (en comptant Pierrot)",
+      "3 caisses de champagne, 2 caisses de blanc, 1 caisse de rouge. Ça 36 bouteilles, soit 3.6 bouteilles / personne pour 2 jours. Cest pas mal nan ? 😂",
+      "On passe d'une activité bucolique à une activité alcoolique. Rien ne change dans cette famille.",
+      "Tu vas manger quelle quantité d'huître environ ? (Par repas)",
+      "Ma responsabilité c'est que chacun se sente libre de proposer et d'exister, que chacun se sente écouter dans cette famille.",
+      "Jai toujours été quelqu'un de bien."
+    ],
     "image": "",
     "imageAlt": "",
-    "tags": [],
+    "tags": ["Contrôle de gestion", "Sondages", "Sommellerie", "Suno"],
     "order": 3,
     "published": true
   },
   {
-    "id": "membre-4",
-    "displayName": "Membre 4",
-    "portrait": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "id": "vale",
+    "displayName": "Valé",
+    "role": "Le Ministère du Mojito Royal",
+    "emoji": "🍹",
+    "portrait": "Valé, c’est la force tranquille du social qui finit invariablement par péter un plomb légitime face aux conneries familiales.\n\nTes passe-temps ? Déclarer « la saison des mojitos ouverte » dès qu'un rayon de soleil perce les nuages du 59, exterminer des colonies de pyrales du buis au lance-flammes (« Chenilles grillées »), et gérer le dos bloqué de Bernard.",
+    "quotes": [
+      "Franchement y a des soirs où la seule solution c est de te peter la gueule !",
+      "1 petage de plomb de grand père, une moyenne de 20 appels de ma mère par jour ajoutes à un manque de personnel au travail et une plaque de vitro Céram explosèe par grand père et j en passe et des meilleures !! Ras le bol"
+    ],
     "image": "",
     "imageAlt": "",
-    "tags": [],
+    "tags": ["QG nordiste", "Mojitos", "Lance-flammes"],
     "order": 4,
+    "published": true
+  },
+  {
+    "id": "bernard",
+    "displayName": "Bernard",
+    "role": "Le Ministère des Travaux Publics",
+    "emoji": "🛒",
+    "portrait": "Bernard, lui, c’est le sniper des promos Auchan.\n\nIl pose 80m² de carrelage en un après-midi sans manger le midi, supporte le Real Madrid au milieu d'une marée de supporters lensois hystériques, et se balade à vélo électrique pendant que sa maison se transforme en blockhaus.\n\nÀ 70 ans (rebaptisé Bernard L'Hermite pour l'occasion), il troque parfois la truelle pour un tour de potier, et écoule sa production de tasses maison à 15€ pièce à la prochaine braderie.",
+    "quotes": [
+      "12 bouteilles 173€52 - 59 en bons d’achat soit 9€54 la bouteille !",
+      "L'aventure bretonochtie commence",
+      "Une caisse = une terrasse \nFonce Caro !"
+    ],
+    "image": "",
+    "imageAlt": "",
+    "tags": ["QG nordiste", "Carrelage", "Promos", "Real Madrid"],
+    "order": 5,
+    "published": true
+  },
+  {
+    "id": "agathe",
+    "displayName": "Agathe (Chonchon)",
+    "role": "La Chasseuse de Bons Plans",
+    "emoji": "🛍️",
+    "portrait": "Agathe, c’est le cœur battant du chat. 40% de tes messages concernent des codes promos chez Festi, des arrivages chez Action, des listes de naissance et des concours de likes Facebook pour le club de handball de Châtelaudren.\n\nTu as bravé des grossesses de 42 semaines, des gastro-entérites légendaires, des chatons malades et des accidents de la route lunaires où une quinquagénaire sous stupéfiants s'encastre dans ta BMW.",
+    "quotes": [
+      "À 20 mint près ….",
+      "Une dame environ 50 ans qui a perdu le contrôle du véhicule elle a presque fauché 2 personnes avant et s’est encastrée dans la bmw",
+      "Rigole pas de trop une sailli pour mon chien est prévue cette été 🤣",
+      "Sans oublier les reproductions intensives de mes chats, on pourrait faire un combo 😜"
+    ],
+    "image": "",
+    "imageAlt": "",
+    "tags": ["Enclave bretonne", "Codes promo", "Handball"],
+    "order": 6,
+    "published": true
+  },
+  {
+    "id": "tom",
+    "displayName": "Tom",
+    "role": "La voix de la raison de l’Arche de Noé",
+    "emoji": "⚓",
+    "portrait": "Tom, ton rôle dans ce chat est héroïque : tu es la voix de la raison qui essaie désespérément de pêcher sans avoir le mal de mer sous Mercalm, et qui balance des fions à Antoine sur sa taille de « nain royal ».",
+    "quotes": [
+      "Ici Thom se vide ++ par le culcul !",
+      "Tu t'es donné du mal merci a toi mon nain royal préféré 🤣"
+    ],
+    "image": "",
+    "imageAlt": "",
+    "tags": ["Enclave bretonne", "Voix de la raison", "Mal de mer"],
+    "order": 7,
+    "published": true
+  },
+  {
+    "id": "lucie",
+    "displayName": "Lucie",
+    "role": "Le Pôle Santé Mentale",
+    "emoji": "🤾‍♀️",
+    "portrait": "Lucie, tu es une sainte. Gérer Antoine qui achète des tronçonneuses et mange du homard cru, organiser la logistique des trois enfants (Paulo futur prodige du hand, Jeannou la championne, et Boubou le futur aventurier de Koh-Lanta), et gérer les listes de Noël tout en excluant discrètement Michel du groupe : tu mérites la Légion d'honneur.",
+    "quotes": ["Un cadeau de naissance est pour le bb par pour le papa!!!"],
+    "image": "",
+    "imageAlt": "",
+    "tags": ["Enclave bretonne", "Logistique", "Légion d’honneur"],
+    "order": 8,
+    "published": true
+  },
+  {
+    "id": "louise",
+    "displayName": "Louise (Nounours)",
+    "role": "Le Pôle Recadrage",
+    "emoji": "📱",
+    "portrait": "Louise (Nounours) incarne la génération Z prise en otage par une famille de boomers exaltés.\n\nElle corrige la syntaxe de sa mère, se fait des tatouages douteux à Bayonne pour déclencher des syncopes chez Caroline, et balance les audios compromettants de sa mère en panique sur le groupe. Une reine.\n\nCôté vraie vie, elle décroche son bac avec mention, intègre une école de cinéma, et valide son année comme une pro : la génération Z n'a pas QUE des tatouages douteux à son actif.",
+    "quotes": [
+      "Vous êtes quand même une famille de drama queen",
+      "Mais je suis très calme arrêter de dire que je suis pas calme",
+      "Bah écoute moi y’a deux jours j’ai decouvert un chat dans le salon ( c’était pas le mien )"
+    ],
+    "image": "",
+    "imageAlt": "",
+    "tags": ["Microclimat parisien", "Génération Z", "Recadrage"],
+    "order": 9,
+    "published": true
+  },
+  {
+    "id": "michel",
+    "displayName": "Michel (Papa / Pépé)",
+    "role": "L’Entité Cryptique",
+    "emoji": "📟",
+    "portrait": "Il mérite un chapitre entier. Michel n’utilise pas WhatsApp : il entre en collision quantique avec WhatsApp. Ses contributions au chat sont des poèmes abstraits.\n\nIl lance des appels vidéo de 16 minutes où personne ne répond parce qu'il dort sur son téléphone, il se fait percuter sa voiture stationnée à Flines, il oublie son portable à la pharmacie des Thermes de Saint-Malo, et tout le monde doit comploter chaque mois de novembre pour le jeter temporairement du groupe afin de lui acheter son cadeau de Noël. Un mythe vivant.",
+    "quotes": ["Assigneu'nsexaunenfantcestdemode", "Uu13423", "MNi deNi de", "Il tu 07", "On se croirait à l'assemblée Nationale"],
+    "image": "",
+    "imageAlt": "",
+    "tags": ["QG nordiste", "Poésie abstraite", "Mythe vivant"],
+    "order": 10,
+    "published": true
+  },
+  {
+    "id": "pierre",
+    "displayName": "Pierre (Pierrot)",
+    "role": "Le Petit Frère Qu’on Compte (Presque) en Dernier",
+    "emoji": "🎓",
+    "portrait": "Pierre, alias Pierrot, alias Bibou, c'est le champion toutes catégories du silence radio : sur six ans et près de 3 200 messages, tu en as écrit à peine plus d'une soixantaine. Mais à chaque apéro, on te compte quand même, « en comptant Pierrot », précise Romain, comme s'il fallait le rappeler.\n\nLe jour où ton contrat d'alternance en école d'ingénieur était officiellement validé, ton frère récupérait les clés de sa maison. Deux mois et demi plus tard, le permis de conduire tombait aussi. Un CV en béton, construit dans l'ombre pendant que les autres se chamaillent sur le groupe.\n\nEt puis, sans prévenir, tu refais surface avec des vidéos de drone tournées au-dessus d'une favela de Rio, ou tu proposes du tabac détaxé à toute la famille. Mystérieux, discret, mais toujours partant pour trinquer.",
+    "quotes": [
+      "Arrivée prévue dans 15 min !!! On a soif 🍾🥂🤣",
+      "Un tonton poule 🐓 🤣",
+      "Coucou vous souhaitez du tabac ?"
+    ],
+    "image": "",
+    "imageAlt": "",
+    "tags": ["Alternance ingénieur", "Permis tout neuf", "Vidéos au drone", "Toujours partant"],
+    "order": 11,
     "published": true
   }
 ]

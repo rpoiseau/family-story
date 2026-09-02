@@ -1,0 +1,142 @@
+[
+  {
+    "id": "naissance-du-groupe",
+    "label": "Il y a plus de six ans",
+    "sortKey": 201900,
+    "title": "Ouverture de la chat-history",
+    "description": "9 754 messages étalés sur plus de six ans : confinements, dalles de béton coulées à la chaîne, transferts de poux via des casquettes, débats géopolitiques sous Tranxène, kilos de poissons posés délicatement dans des petits lits de camp, et un mystère technologique nommé Michel.",
+    "icon": "mdi-whatsapp",
+    "kind": "passe",
+    "published": true
+  },
+  {
+    "id": "maison-romain",
+    "label": "Juin 2024",
+    "sortKey": 202406,
+    "title": "Romain devient (vraiment) propriétaire",
+    "description": "Après l'achat compulsif d'une maison qu'il qualifiera lui-même de « ruine » et de « gouffre financier », Romain récupère enfin les clés. Le jour même, comme un signe du destin familial, l'alternance ingénieur de son frère Pierre est officiellement validée.",
+    "icon": "mdi-key-variant",
+    "kind": "passe",
+    "published": true
+  },
+  {
+    "id": "secret-santa",
+    "label": "Chaque année, à partir du 12 octobre",
+    "sortKey": 202510,
+    "title": "Le Secret Santa déclenche la guerre civile administrative",
+    "description": "Antoine propose un tirage au sort, Caroline n'a rien compris, Romain crée un sondage, Louise fait le tirage, tout le monde l'oublie le lendemain, et Pépé Michel veut être dans le jeu, puis ne veut plus, puis on doit tout refaire.",
+    "icon": "mdi-gift-outline",
+    "kind": "passe",
+    "published": true
+  },
+  {
+    "id": "sondage-chef-noel",
+    "label": "Octobre 2025",
+    "sortKey": 202510,
+    "title": "Romain élu « chef Noël » malgré lui",
+    "description": "Un sondage WhatsApp en bonne et due forme pour désigner qui organisera Noël cette année-là. Résultat sans appel : 8 votes pour Romain, motif officiel « il ouvre trop sa gueule et ça lui fera pas de mal de bosser un peu ». La démocratie familiale dans toute sa splendeur.",
+    "icon": "mdi-poll",
+    "kind": "passe",
+    "published": true
+  },
+  {
+    "id": "bernard-70-ans",
+    "label": "Novembre 2025",
+    "sortKey": 202511,
+    "title": "Les 70 ans de Bernard L'Hermite",
+    "description": "Bernard souffle ses 70 bougies et hérite au passage d'un nouveau surnom officiel : Bernard L'Hermite. Le sniper des promos Auchan n'a pas pris une ride sur le carrelage.",
+    "icon": "mdi-cake-variant",
+    "kind": "passe",
+    "published": true
+  },
+  {
+    "id": "gastro-noel-2025",
+    "label": "Noël 2025",
+    "sortKey": 202512,
+    "title": "La gastro nucléaire : Tchernobyl à Flines",
+    "description": "Il y a eu la peste noire en 1347, la grippe espagnole en 1918, et le Noël 2025 chez les Fontaine-Poiseau-Obré. Le carnage se déploie avec une précision chirurgicale, et le patient zéro est déclaré interdit de Noël l'année suivante.",
+    "icon": "mdi-biohazard",
+    "kind": "passe",
+    "published": true
+  },
+  {
+    "id": "lucie-40-ans",
+    "label": "Décembre 2025",
+    "sortKey": 202512,
+    "title": "Les 40 ans de Lucie, pile pour Noël",
+    "description": "Née un 24 décembre, Lucie fête ses 40 ans en même temps que le réveillon, un exploit logistique qu'elle gère, comme toujours, avec panache.",
+    "icon": "mdi-party-popper",
+    "kind": "passe",
+    "published": true
+  },
+  {
+    "id": "souris-verticale",
+    "label": "2026",
+    "sortKey": 202600,
+    "title": "L'épopée de la souris Spiderman",
+    "description": "Le plus grand moment de comédie de l'année : une souris trapéziste descend le long des meubles de cuisine, la voisine monte tellement Caroline a hurlé, et des sacs entiers de lavande sont déversés dans tout l'appartement.",
+    "icon": "mdi-paw",
+    "kind": "passe",
+    "published": true
+  },
+  {
+    "id": "finale-coupe-de-france",
+    "label": "Mai 2026",
+    "sortKey": 202605,
+    "title": "RC Lens en finale, la famille électrise le Stade de France",
+    "description": "Marée Sang et Or à Paris : Antoine embarque toute la tribu pour la finale de la Coupe de France face à Nice. Fumigènes, frissons, un stade rempli à 75% de supporters lensois, et Lens qui s'impose 2-0. Un souvenir gravé, même si tout le monde n'a pas survécu au gage de l'écharpe.",
+    "icon": "mdi-trophy",
+    "kind": "passe",
+    "published": true
+  },
+  {
+    "id": "fiancailles-antoine-lucie",
+    "label": "Août 2026",
+    "sortKey": 202608,
+    "title": "Antoine et Lucie officialisent : c'est oui !",
+    "description": "Après six ans de groupe WhatsApp, trois enfants et un empire de bardage en bois Douglas, Antoine et Lucie annoncent leurs fiançailles. Mariage prévu sur quatre jours, en Bretagne, avec le Nord « omniprésent ». La prédiction se réalise plus vite que prévu.",
+    "icon": "mdi-heart",
+    "kind": "passe",
+    "published": true
+  },
+  {
+    "id": "noel-2027",
+    "label": "Noël 2027",
+    "sortKey": 202712,
+    "title": "Le vote blockchain du chapon",
+    "description": "Romain tentera d'imposer un vote électronique sur la blockchain pour choisir entre le chapon et la dinde fermière. Le système plantera quand Michel tentera de voter en envoyant une photo de son coude.",
+    "icon": "mdi-vote-outline",
+    "kind": "prediction",
+    "published": true
+  },
+  {
+    "id": "juin-2028",
+    "label": "Juin 2028",
+    "sortKey": 202806,
+    "title": "Le phare de la Baie de Somme",
+    "description": "Caroline rachètera un phare abandonné en Baie de Somme pour y installer un atelier de céramique et 45 sacs de lavande anti-rongeurs.",
+    "icon": "mdi-lighthouse",
+    "kind": "prediction",
+    "published": true
+  },
+  {
+    "id": "aout-2029",
+    "label": "Août 2029",
+    "sortKey": 202908,
+    "title": "Gégé, silure de 2m40",
+    "description": "Antoine capturera un silure de 2m40 dans la Seine, le couchera dans un lit deux places Ikea, et l'inscrira au registre de l'état civil de Châtelaudren sous le prénom de Gégé.",
+    "icon": "mdi-fish",
+    "kind": "prediction",
+    "published": true
+  },
+  {
+    "id": "mariage",
+    "label": "À une date encore inconnue",
+    "sortKey": 209900,
+    "title": "Le mariage d'Antoine et Lucie",
+    "description": "Le mariage durera 6 jours. Il y aura 400 litres de blanc, 3 interventions du SAMU pour lumbago chez les plus de 40 ans, et une marée de drapeaux Sang et Or au moment de l'échange des alliances.",
+    "icon": "mdi-ring",
+    "kind": "prediction",
+    "published": true
+  }
+]

@@ -9,7 +9,6 @@ const navLinks = [
   { label: 'Accueil', to: '/' },
   { label: 'La famille', to: '/famille' },
   { label: 'What Brandon Think', to: '/what-brandon-think' },
-  { label: 'Arbre généalogique', to: '/arbre-genealogique' },
   { label: 'Timeline', to: '/timeline' },
 ]
 

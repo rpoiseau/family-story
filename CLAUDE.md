@@ -12,8 +12,8 @@ Le développement est organisé en lots. Ne jamais commencer un nouveau lot avan
 2. Ne prendre aucune liberté fonctionnelle ou technique structurante sans accord explicite.
 3. Ne jamais exécuter `git push` ni publier une branche, un tag ou une pull request.
 4. Mettre à jour `PROGRESS.md` avant et après toute étape significative.
-5. Ne jamais inventer de contenu familial. Utiliser seulement du `Lorem ipsum` comme contenu temporaire.
-6. Ne jamais introduire de donnée personnelle réelle dans les exemples, tests, noms de fichiers, commits ou journaux.
+5. Ne jamais inventer de contenu familial. Le contenu provient exclusivement du rapport « What Brandon Thinks » fourni par l'utilisateur ou de textes qu'il écrit lui-même.
+6. Ne pas introduire de donnée personnelle réelle au-delà de ce que contient déjà ce rapport (voir `.claude/rules/data-privacy.md`).
 7. Exécuter `nvm use stable` avant toute commande `npm`, sans exception.
 8. Vérifier au minimum `npm run build` avant de considérer une tâche comme terminée.
 
@@ -22,9 +22,8 @@ Le développement est organisé en lots. Ne jamais commencer un nouveau lot avan
 - Nom : **Family Story**.
 - Audience fonctionnelle : membres d'une seule famille.
 - Hébergement : GitHub Pages publique.
-- Toutes les informations familiales doivent être pseudonymisées.
-- Aucun mineur ne doit être présenté.
-- Chaque portrait et chaque image réelle doivent être explicitement validés avant intégration.
+- Le contenu éditorial provient du rapport « What Brandon Thinks » fourni par l'utilisateur, repris quasi intégralement (décision du 2026-09-01). La pseudonymisation, l'interdiction de présenter des mineurs et l'interdiction des anecdotes de santé sont levées pour cette source uniquement.
+- Chaque image réelle doit être explicitement validée avant intégration.
 - Le site est exclusivement frontend pour le moment.
 - Langue de l'interface et du contenu : français.
 
@@ -63,9 +62,9 @@ Routes prévues :
 
 - `/` : accueil
 - `/famille` : portraits satiriques des membres
-- `/what-brandon-think` : page en construction
+- `/what-brandon-think` : le rapport Brandon (géopolitique, piliers, trophées, prédictions, réactions)
 - `/arbre-genealogique` : page en construction
-- `/timeline` : page en construction
+- `/timeline` : chronologie des événements marquants et des prédictions
 - route de rattrapage : page 404
 
 La page d'accueil contient :
@@ -77,9 +76,9 @@ La page d'accueil contient :
 
 La navigation est horizontale sur ordinateur et utilise un menu hamburger sur mobile.
 
-La page **La famille** utilise une grille de cartes ouvrant une fiche détaillée. Les portraits satiriques sont exclusivement rédigés et fournis par l'utilisateur. Ne jamais les inventer, les corriger ou les réécrire sans demande explicite.
+La page **La famille** utilise une grille de cartes ouvrant une fiche détaillée. Les portraits satiriques proviennent du trombinoscope du rapport Brandon. Ne jamais les inventer, les corriger ou les réécrire sans demande explicite.
 
-Les pages **What Brandon Think**, **Arbre généalogique** et **Timeline** restent en construction. Elles comprennent un titre, une indication `En construction`, une illustration ou icône Vuetify et un retour vers l'accueil. Ne pas inventer leur futur contenu.
+La page **Arbre généalogique** reste en construction : elle comprend un titre, une indication `En construction`, une icône Vuetify et un retour vers l'accueil. Ne pas inventer de filiation, le rapport n'en fournit aucune de fiable.
 
 Aucune galerie et aucune page de contact ne sont prévues pour le moment.
 

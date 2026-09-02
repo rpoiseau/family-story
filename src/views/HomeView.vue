@@ -1,18 +1,61 @@
 <script setup lang="ts">
 import { useDisplay } from 'vuetify'
+import QuoteBlock from '@/components/QuoteBlock.vue'
+import brandonReport from '@/data/brandon-thoughts.json'
+import familyMembersData from '@/data/family-members.json'
+import type { BrandonReport } from '@/types/brandon-report'
+import type { FamilyMember } from '@/types/family-member'
 
 const { mdAndUp } = useDisplay()
 
-const rubriques = [
-  { label: 'La famille', to: '/famille', icon: 'mdi-account-group' },
-  { label: 'What Brandon Think', to: '/what-brandon-think', icon: 'mdi-thought-bubble' },
-  { label: 'Arbre généalogique', to: '/arbre-genealogique', icon: 'mdi-family-tree' },
-  { label: 'Timeline', to: '/timeline', icon: 'mdi-timeline-clock' },
+const report = brandonReport as BrandonReport
+
+const familyMembers = familyMembersData as FamilyMember[]
+const memberById = new Map(familyMembers.map((member) => [member.id, member]))
+
+// Sélection éditoriale des meilleures citations, une par membre, référencées par index
+// dans le tableau `quotes` de family-members.json (source unique, pas de duplication de texte).
+const bestQuoteRefs = [
+  { memberId: 'caroline', index: 4 },
+  { memberId: 'antoine', index: 1 },
+  { memberId: 'romain', index: 5 },
+  { memberId: 'vale', index: 0 },
+  { memberId: 'bernard', index: 1 },
+  { memberId: 'agathe', index: 2 },
+  { memberId: 'tom', index: 0 },
+  { memberId: 'lucie', index: 0 },
+  { memberId: 'louise', index: 1 },
+  { memberId: 'michel', index: 4 },
+  { memberId: 'pierre', index: 0 },
 ]
 
-const citations = [
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+const bestQuotes = bestQuoteRefs
+  .map(({ memberId, index }) => {
+    const member = memberById.get(memberId)
+    const text = member?.quotes[index]
+    return member && text ? { text, author: member.displayName } : null
+  })
+  .filter((quote): quote is { text: string; author: string } => quote !== null)
+
+const rubriques = [
+  {
+    label: 'La famille',
+    to: '/famille',
+    icon: 'mdi-family-tree',
+    description: 'Le trombinoscope au vitriol, en arbre généalogique : qui descend de qui ?',
+  },
+  {
+    label: 'What Brandon Think',
+    to: '/what-brandon-think',
+    icon: 'mdi-thought-bubble',
+    description: 'Le rapport intégral : géopolitique du clan, piliers fondateurs et trophées.',
+  },
+  {
+    label: 'Timeline',
+    to: '/timeline',
+    icon: 'mdi-timeline-clock',
+    description: 'Des traumatismes fondateurs aux prédictions pour les cinq prochaines années.',
+  },
 ]
 </script>
 
@@ -30,12 +73,10 @@ const citations = [
 
     <v-row justify="center" class="mb-10">
       <v-col cols="12" md="8" class="text-center">
-        <h1 class="display-title mb-4">Family Story</h1>
-        <p class="text-body-1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <h1 class="display-title mb-4">{{ report.title }}</h1>
+        <p class="text-subtitle-1 text-medium-emphasis mb-6">{{ report.subtitle }}</p>
+        <p class="text-body-1 mb-4">{{ report.intro[1] }}</p>
+        <p class="text-body-1 mb-0">{{ report.intro[2] }}</p>
       </v-col>
     </v-row>
 
@@ -64,7 +105,7 @@ const citations = [
             <v-col>
               <h2 class="display-title--sm">{{ rubrique.label }}</h2>
               <p class="text-body-2 text-medium-emphasis mb-0 d-none d-sm-block">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                {{ rubrique.description }}
               </p>
             </v-col>
             <v-col cols="auto">
@@ -84,15 +125,29 @@ const citations = [
 
       <v-row justify="center">
         <v-col cols="12" md="8">
-          <v-sheet
-            v-for="(citation, index) in citations"
-            :key="index"
-            rounded="lg"
-            class="pa-6 mb-4 quote-sheet"
+          <v-carousel
+            cycle
+            :interval="6000"
+            :height="mdAndUp ? 200 : 260"
+            hide-delimiter-background
+            :show-arrows="mdAndUp ? 'hover' : false"
+            color="primary"
+            class="quote-carousel"
           >
-            <v-icon icon="mdi-format-quote-open" size="28" color="primary" class="mb-2" />
-            <p class="text-h6 font-italic mb-0 text-high-emphasis">{{ citation }}</p>
-          </v-sheet>
+            <v-carousel-item
+              v-for="(quote, index) in bestQuotes"
+              :key="index"
+              :transition="false"
+              :reverse-transition="false"
+            >
+              <div class="quote-carousel__slide">
+                <QuoteBlock :text="quote.text" />
+                <p class="text-center text-medium-emphasis text-body-2 mb-0">
+                  — {{ quote.author }}
+                </p>
+              </div>
+            </v-carousel-item>
+          </v-carousel>
         </v-col>
       </v-row>
     </div>
@@ -105,12 +160,16 @@ const citations = [
   padding-bottom: 4px;
 }
 
+.quote-carousel__slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px;
+}
+
 .rubrique-row__icon {
   width: 56px;
   height: 56px;
-}
-
-.quote-sheet {
-  background-color: rgba(var(--v-theme-secondary), 0.16);
 }
 </style>

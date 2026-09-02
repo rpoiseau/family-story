@@ -1,0 +1,27 @@
+{
+  "rootId": "michel",
+  "persons": [
+    { "id": "michel", "firstName": "Michel", "generation": 0, "order": 1 },
+    { "id": "caroline", "firstName": "Caroline", "generation": 1, "order": 1, "relationLabel": "Enfant de Michel" },
+    { "id": "vale", "firstName": "Valé", "generation": 1, "order": 2, "relationLabel": "Enfant de Michel" },
+    { "id": "bernard", "firstName": "Bernard", "generation": 1, "order": 3, "relationLabel": "Conjoint de Valé" },
+    { "id": "antoine", "firstName": "Antoine", "generation": 1, "order": 4, "relationLabel": "Enfant de Michel" },
+    { "id": "lucie", "firstName": "Lucie", "generation": 1, "order": 5, "relationLabel": "Conjointe d'Antoine" },
+    { "id": "louise", "firstName": "Louise", "generation": 2, "order": 1, "relationLabel": "Fille de Caroline" },
+    { "id": "romain", "firstName": "Romain", "generation": 2, "order": 2, "relationLabel": "Fils de Valé et Bernard" },
+    { "id": "agathe", "firstName": "Agathe", "generation": 2, "order": 3, "relationLabel": "Fille de Valé et Bernard" },
+    { "id": "tom", "firstName": "Tom", "generation": 2, "order": 4, "relationLabel": "Compagnon d'Agathe" },
+    { "id": "pierre", "firstName": "Pierre", "generation": 2, "order": 5, "relationLabel": "Fils de Valé et Bernard" },
+    { "id": "jeanne", "firstName": "Jeanne", "generation": 2, "order": 6, "relationLabel": "Fille d'Antoine et Lucie", "isMinor": true },
+    { "id": "louis", "firstName": "Louis", "generation": 2, "order": 7, "relationLabel": "Fils d'Antoine et Lucie", "isMinor": true },
+    { "id": "paul", "firstName": "Paul", "generation": 2, "order": 8, "relationLabel": "Fils d'Antoine et Lucie", "isMinor": true },
+    { "id": "nina", "firstName": "Nina", "generation": 3, "order": 1, "relationLabel": "Fille d'Agathe et Tom", "isMinor": true }
+  ],
+  "unions": [
+    { "id": "union-michel", "partners": ["michel"], "type": "parent-seul", "children": ["caroline", "vale", "antoine"] },
+    { "id": "union-caroline", "partners": ["caroline"], "type": "parent-seul", "children": ["louise"] },
+    { "id": "union-vale-bernard", "partners": ["vale", "bernard"], "type": "conjoint", "children": ["romain", "agathe", "pierre"] },
+    { "id": "union-antoine-lucie", "partners": ["antoine", "lucie"], "type": "conjoint", "children": ["jeanne", "louis", "paul"] },
+    { "id": "union-agathe-tom", "partners": ["agathe", "tom"], "type": "compagnon", "children": ["nina"] }
+  ]
+}
